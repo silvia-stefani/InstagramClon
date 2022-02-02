@@ -1,0 +1,126 @@
+.nav_mobile {
+
+    display: none;
+    
+    @media screen and (max-width: 750px) {
+
+        position: fixed;
+        top: 0;
+        right: 0;
+
+        display: grid;
+        grid-template-rows: 5vh 20vh 75vh;
+
+        width: 65%;
+        height: 101%;
+        z-index: 1000;
+
+        background-color:#fff;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+        transform: translateX(100%);
+
+        transition: all, background-color;
+        transition-duration: 320ms, 0ms;
+        transition-timing-function: ease, linear;
+
+        &.opened {
+
+            transform: translateX(0);
+        }
+
+        @media screen and (max-width: 360px) {
+            width: 80%;
+        }
+    }
+
+    .header_mobile {
+        
+        grid-area: 1 / 1 / 2 / 2;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        padding: $base * 2;
+
+        .settings {
+            span {
+                color: #2a2a2a;
+            }
+        }
+        .close_nav {
+            span {
+                color: #2a2a2a;
+            }
+        }
+    }
+
+    .user_info {
+
+        grid-area: 2 / 1 / 3 / 2;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding: $base * 4 $base * 2;
+
+        .user_name {
+            h1 {}
+            h2 {
+                font-size: $font_size_base * .9;
+            }
+        }
+        .user_pic {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                display: flex;
+                position: relative;
+
+                width: 5rem;
+                border-radius: 50%;
+            }
+            svg {
+                position: absolute;
+
+                width: 5.75rem;
+                
+                .user_pic_status {
+                    stroke-width: .3rem;
+                    stroke: url('#paint0_linear_2_47');
+                    fill: none;
+
+                    transform-origin: 50% 50%;
+
+                    stroke-dasharray: 520px;
+                    stroke-dashoffset: 0px;
+                    transform: rotate(90deg);
+
+                    transition: stroke-dashoffset, transform;
+                    transition-duration: 1s, 1s;
+                    transition-timing-function: ease, ease;
+                }
+
+                .linear_gradient {}
+
+
+                &.active {
+
+                    .user_pic_status {
+
+                        stroke-dashoffset: 520px;
+                        transform: rotate(960deg);
+
+                        transition: stroke-dashoffset, transform;
+                        transition-duration: 1s, 1s;
+                        transition-timing-function: ease, ease;
+                    }
+                }
+            }            
+        }
+    }
+}

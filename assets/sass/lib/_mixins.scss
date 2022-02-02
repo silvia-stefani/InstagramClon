@@ -1,0 +1,29 @@
+@mixin btn-primary {
+    background-color: #0095F6;
+    padding: $base * .5 $base * 1.5;
+
+    font-size: $font_size_base * .9;
+    color: #fff;
+
+    border: 0;
+    border-radius: .3rem;
+    
+    &:hover {
+        border: 0;
+
+        background-color: #11a0ff;
+
+    }
+
+    @media screen and (max-width:750px) {
+        font-size: $font_size_base * 1.1;
+    }
+}
+
+@mixin icons {
+    width: $base * 2;
+
+    @media screen and (max-width:750px) {
+        width: $base * 3;
+    }
+}

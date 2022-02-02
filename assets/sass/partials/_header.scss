@@ -1,0 +1,180 @@
+.header {
+    display: flex;
+    justify-content: center;
+    padding: $base * 1.5 0;
+    background-color: white;
+    border-bottom: .1rem solid #9B9B9B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 3;
+
+    .header_holder {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1080px;
+        width: 75%;
+
+        @media screen and (max-width: 750px) {
+            width: 90%;
+        }
+
+        .logo {
+            a {
+                display: flex;
+
+                svg {
+                    width: 7rem;
+
+                    .logo_path {
+                        fill: #2a2a2a;
+                    }
+                }
+
+                &:hover {
+
+                    svg {
+
+                        .logo_path {
+                            opacity: 90%;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .searchbox {
+            display: flex;
+            justify-content: center;
+
+            @media screen and (max-width: 750px) {
+                display: none;
+            }
+
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #FAFAFA;
+                border: .1rem solid #d6d6d6;
+                border-radius: .3rem;
+                padding: 0 $base * 1.5;
+                    
+                width: 80%;
+
+                span {
+                    color: #9B9B9B;
+                }
+
+                input {
+                    background-color: transparent;
+                    border: 0;
+                    width: 100%;
+
+                    margin-left: $base;
+
+                    font-size: $font_size_base * .9;
+                }
+            }
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+
+
+            .main_navigation {
+
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li {
+                    margin-left: $base * 2;
+                    position: relative;
+
+                    a {
+                        display: flex;
+
+                        .icon {
+                            display: flex;
+
+                            svg {
+                                width: $base * 3;
+                                .icon {
+                                    fill: black;
+                                }
+                            }
+
+                            &:hover {
+                                svg {
+                                    .icon {
+                                        opacity: 75%;
+                                    }
+                                }
+                            }
+                        }
+
+                        .bubble_notification {
+                            position: absolute;
+                            top: -0.25rem;
+                            right: -0.1rem;
+                            width: auto;
+                            height: auto;
+                            font-size: .7rem;
+                            color: #FF5050;
+                            visibility: hidden;
+
+                            &.active {
+                                visibility: visible;
+                            }
+
+                            .fa {}
+                        }
+                    }
+                }
+                
+            }
+
+            .main_navigation.mobile {
+                display: none;
+
+                @media screen and (max-width: 750px) {
+                    display: flex;
+                    list-style: none;
+                }
+
+                a.search_mobile {
+                    .fa {
+                        font-size: $base * 3;
+                        color: #9B9B9B;
+                    }
+                }
+            }
+            .main_navigation.desktop {
+
+                @media screen and (max-width: 750px) {
+                    display: none;
+                }
+            }
+
+            .user {
+                margin-left: $base * 2;
+                display: flex;
+
+                img {
+                    width: $base * 4;
+
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+

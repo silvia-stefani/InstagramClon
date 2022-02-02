@@ -1,0 +1,229 @@
+section.user {
+    display: flex;
+    justify-content: center;
+    margin-top: $base * 12;
+
+    @media screen and (max-width: 750px) {
+        margin-top: $base * 10;
+    }
+
+    .user_holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 75%;
+        max-width: 1080px;
+
+        margin: $base * 4 0;
+
+        @media screen and (max-width: 750px) {
+            max-width: 750px;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+
+            margin: 0 0 $base * 2 0;
+        }
+
+        .user_picture {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            padding: 0 $base * 4;
+
+            @media screen and (max-width: 750px) {
+                padding: $base * 2 0;
+            }
+
+            .user_active_story {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                img.user_day_story {
+                    display: flex;
+                    position: relative;
+
+                    width: 12rem;
+                    border-radius: 50%;
+                    padding: .25rem;
+
+                    @media screen and (max-width: 750px) {
+                        width: 9rem;
+                    }
+
+                }
+                svg.charging_story {
+                    position: absolute;
+                    width: 12.5rem;
+                    @media screen and (max-width: 750px) {
+                        width: 9.5rem;
+                    }
+                    
+                    .user_pic_status {
+                        stroke-width: .2rem;
+                        stroke: url('#paint0_linear_2_47');
+                        stroke-linecap: round;
+                        fill: none;
+
+                        transform-origin: 50% 50%;
+
+                        stroke-dasharray: 0px;
+                        stroke-dashoffset: 0px;
+                    }
+
+                    .linear_gradient {
+
+                        stop.stop_01 {
+                            stop-color: #C72E8F;
+                        }
+                        stop.stop_02 {
+                            stop-color: #F99F4F;
+                        }
+                    }
+
+                    &.active {
+
+                        .user_pic_status {
+
+                            stroke-dasharray: 520px;
+                            transform: rotate(270deg);
+
+                            transition: stroke-dasharray, transform;
+                            transition-duration: 1s, 1s;
+                            transition-timing-function: ease, ease;
+                        }
+
+                        .linear_gradient {
+    
+                            stop.stop_01 {
+                                stop-color: #ccc;
+
+                                transition: stop-color;
+                                transition-delay: 500ms;
+                                transition-duration: 500ms;
+                                transition-timing-function: ease;
+                            }
+                            stop.stop_02 {
+                                stop-color: #ccc;
+                                transition-timing-function: ease;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .user_info {
+            width: 60%;
+            padding: 0 $base * 4;
+
+            @media screen and (max-width: 750px) {
+                width: 100%;
+                justify-content: center;
+            }
+            
+            .user_info_heading {
+                display: flex;
+                margin-bottom: $base * 2;
+
+                @media screen and (max-width: 750px) {
+                    justify-content: center;
+                    flex-direction: column;
+                }
+                .user_name {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    margin-right: $base * 2;
+                    
+                    @media screen and (max-width: 750px) {
+                        margin: 0;
+                    }
+                    
+                    h1.user_name {}
+                }
+                .user_options {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    
+                    margin: $base 0;
+                    
+                    button.btn-follow {
+                        @include btn-primary;
+                        margin-right: $base * 1.5;
+                    }
+                    button.btn-arrow {
+                        @include btn-primary;
+                        margin-right: $base * 1.5;
+                        .fa {}
+                    }
+                    .more_options {
+
+                        .fa-ellipsis-h {
+                            font-size: $base * 3;
+                        }
+                    }
+                }
+            }
+            ul.user_info_data {
+                display: flex;
+
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                    
+
+                margin: $base * 2 0;
+
+                @media screen and (max-width:750px) {
+                    justify-content: space-between;
+                }
+                
+                li {
+                    display: flex;
+                    margin-right: $base * 2;
+
+                    align-items: center;
+
+                    @media screen and (max-width: 750px) {
+                        flex-direction: column;
+                    }
+
+                    p.number {
+                        font-weight: $dt_font_weight;
+                        margin-right: $base;
+                    }
+                    p.data {
+
+                        @media screen and (max-width: 360px) {
+                            font-size: $font_size_base;
+                        }
+                    }
+                }
+
+                li.following {
+                    margin-right: 0;
+                }
+            }
+            .user_info_bio {
+
+                h1.your_name {
+                    margin-bottom: $base / 2;
+                }
+                p.your_bio {
+                    margin-bottom: $base / 2;
+                    a.hashtag {}
+                }
+                p.your_site {
+                    font-weight: $dt_font_weight;
+                    a {}
+                }
+            }
+        }
+    }
+}
+

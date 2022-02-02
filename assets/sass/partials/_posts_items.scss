@@ -1,0 +1,54 @@
+.posts_items {
+    
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: auto;
+        grid-gap: $base * 3;
+
+        justify-content: center;
+        margin-bottom: $base * 4;
+
+        @media screen and (max-width: 750px) {
+            grid-gap: $base / 2;
+            margin: $base / 2;
+        }
+
+        .post {
+            
+            position: relative;
+            background-color: #000;
+
+            .post_image {
+                height: 100%;
+                display: flex;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+
+                    object-fit: cover;
+                    object-position: center;
+                }
+
+                &:hover {
+                    opacity: 75%;
+                }
+            }
+            
+            .icons {
+                position: absolute;
+                top: .5rem;
+                right: .5rem;
+
+                svg {
+                    width: 1rem;
+
+                    .icon_post {
+                        fill: #fff;
+                        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+                    }
+                }
+            }
+        }
+    }
+

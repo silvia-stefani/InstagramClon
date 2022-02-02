@@ -1,0 +1,74 @@
+@import 'lib/vars';
+@import 'lib/mixins';
+@import 'lib/reboot';
+@import 'lib/fontawesome/font-awesome';
+@import 'lib/fontface';
+@import 'lib/keyframes';
+
+@import 'partials/header';
+@import 'partials/section_user';
+@import 'partials/stories';
+@import 'partials/posts_header';
+@import 'partials/posts_items';
+@import 'partials/modal_menu';
+@import 'partials/nav_mobile';
+@import 'partials/nav_user_section';
+
+
+$corporateColor: tomato;
+
+* {
+    /* border: 1px solid $corporateColor; */
+}
+
+html,
+body {
+    font-size: $font_size_base;
+    font-family: $font_family_base;
+    line-height: $line_height_base;
+    color: $body_color;
+    min-height: 100vh;
+    background-color: #FAFAFA;
+}
+
+h1 {
+    font-size: $font_size_base;
+    font-weight: $dt_font_weight;
+    line-height: $line_height_base;
+
+    margin: 0;
+
+    @media screen and (max-width: 750px) {
+        font-size: $font_size_base * 1.2;
+    }
+}
+
+h2 {
+    font-size: $font_size_base * 2;
+    font-weight: $font_weight_base;
+    margin: 0;
+}
+
+h3 {
+    font-size: $font_size_base;
+    line-height: $line_height_base;
+    font-weight: $font_weight_base;
+
+    margin: 0;
+
+    @media screen and (max-width: 750px) {
+        font-size: $font_size_base * 1.2;
+    }
+}
+
+p {
+    font-size: $font_size_base;
+    line-height: $line_height_base * .9;
+    color: #2a2a2a;
+
+    margin: 0;
+
+    @media screen and (max-width: 750px) {
+        font-size: $font_size_base * 1.2;
+    }
+}

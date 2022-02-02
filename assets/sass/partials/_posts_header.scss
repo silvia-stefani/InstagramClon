@@ -1,0 +1,114 @@
+.posts {
+
+    justify-content: center;
+
+    margin: 0 auto;
+    width: 70%;
+    max-width: 1080px;
+
+    border-top: 1px solid #d6d6d6;
+
+    @media screen and (max-width:750px) {
+        width: 100%;
+        max-width: 750px;
+}
+
+    .posts_header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: $base * 4;
+
+        @media screen and (max-width:750px) {
+            justify-content: space-between;
+
+            margin-bottom: $base;
+        }
+
+        a.post_header_item {
+            display: flex;
+            margin: -1px $base * 4 0 $base * 4;
+
+            padding-top: $base * 2;
+            justify-content: center;
+
+            @media screen and (max-width:750px) {
+                flex-direction: column;
+                margin: -1px 0 0 0;
+                padding: $base 0;
+                width: 100%;
+
+            }
+
+            .post_header_item_icon {
+                margin-right: $base * 2;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                
+                svg {
+                    display: flex;
+                    @include icons;
+                    .icon {
+                        fill: #9B9B9B;
+                    }
+                }
+
+                @media screen and (max-width:750px) {
+                    margin: 0 0 $base * 1.5 0;
+                }
+                
+            }
+            .post_header_item_title {
+                justify-content: center;
+                align-items: center;
+                display: flex;
+
+                p {
+                    color: #9B9B9B;
+                    text-transform: uppercase;
+                    font-weight: $dt_font_weight;
+                    line-height: 1rem;
+                    
+                    margin: 0;
+                }
+                p.post_title_mobile {
+                    display: none;
+                }
+
+                @media screen and (max-width:750px) {
+                    p.post_title_mobile {
+                        display: flex;
+
+                        font-size: $font_size_base * .9;
+                        text-align: center;
+                    }
+                    p.post_title_desktop {
+                        display: none;
+                    }
+                }
+            }
+
+            &:hover {
+                opacity: 85%;
+            }
+            &.active {
+                border-top: 1.5px solid #000;
+
+                .post_header_item_icon {
+                    svg {
+                        .icon {
+                            fill: black;
+                        }
+                    }
+                }
+                .post_header_item_title {
+                    p {
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+}

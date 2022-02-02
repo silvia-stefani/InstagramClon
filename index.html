@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<!-----------------------------------------
+*******************************************
+
+HOLA CARLOS!
+
+En este ejercicio vas a encontrar:
+* Instagram responsive (desktop & smartphone)
+* Animaciones SVG
+
+¿Qué puedes hacer?
+- Click en el user picture en navegación smartphone
+- Click en los '+' del menú en versión smartphone
+- Click en el insta story principal y cualquiera de los insta stories
+
+*******************************************
+------------------------------------------>
+
+<html class="no-js" lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="theme-color" content="#fafafa" />
+
+    <title>Instagram / E03 Silvia Stefani</title>
+
+    <meta name="description" content="" />
+    <link rel="apple-touch-icon" href="./assets/img/icon.png" />
+    <link rel="icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link href="./assets/css/main.css.map" />
+</head>
+
+<body>
+    <div class="instagram">
+
+<!-- VISIBLE HTML -->
+        <!-- header -->
+        <header class="header">
+            <div class="header_holder">
+                <div class="logo">
+                    <a href="#">
+                        <svg viewBox="0 0 104 30" class="logo_instagram">
+                            <g class="logo_path">
+                              <path d="M5.29.114c-.674.243-1.722.975-2.502 1.755C1.634 3.022.741 4.517.212 6.19c-.178.569-.21.829-.21 1.65-.009.828.024 1.048.186 1.462.496 1.268 1.544 2.291 2.624 2.568.301.073.407.073.504-.008.195-.163.146-.423-.235-1.09-.935-1.632-.886-3.932.13-6.361.414-1.016 1.6-2.625 1.917-2.625.122 0 .138 14.146.016 16.332-.081 1.584-.162 2.088-.455 3.071-.26.877-.243 1.105.106 1.137.642.065 1.844-.926 2.397-1.974.406-.78.69-1.812.804-2.909.065-.609.098-3.46.106-8.685L8.11.99l-.203-.22c-.56-.6-1.86-.925-2.616-.657zM33.907.146c-.163.13-.195.26-.252.959a39.907 39.907 0 00-.073 1.934v1.13l-2.909-.115-.17.22c-.212.268-.358.763-.366 1.275-.008.585.081.626 1.365.626.585 0 1.251.024 1.47.049l.407.048-.025 3.307-.032 3.3-.236.73a7.166 7.166 0 01-1.422 2.446l-.43.48-.009-.7c-.008-1.576-.511-2.29-2.884-4.07-.715-.544-1.332-1.008-1.365-1.04-.04-.032.098-.293.309-.577.617-.837.967-1.641 1-2.316.032-.52.015-.593-.188-.828-.398-.471-1.454-.553-2.258-.179-1.187.56-1.983 2.007-1.763 3.185.08.398.398 1.056.568 1.162.049.024.082.105.082.179 0 .292-2.397 4.452-3.064 5.33-.203.26-.495.536-.642.609-.268.122-.292.122-.438-.032-.09-.082-.195-.35-.244-.594-.106-.552-.106-3.883 0-6.215.057-1.195.057-1.885 0-2.088-.106-.39-.617-.845-1.357-1.22-.471-.235-.634-.275-1.121-.275-.674.008-1.073.187-1.674.739-.87.82-1.65 2.25-2.47 4.542-.26.715-.504 1.332-.544 1.381-.04.049-.049-1.178-.017-2.933.057-2.966.057-3.014-.105-3.177-.415-.414-2.056-.764-2.291-.48-.09.106-.114 1.203-.147 5.631-.048 5.696-.024 6.143.277 6.76.26.504.503.618 1.365.618.577 0 .796-.033.885-.122.073-.073.17-.471.244-.942.325-2.178 1.26-5.144 2.234-7.085.691-1.382 1.845-2.95 1.991-2.706.032.04-.008 1.43-.081 3.071-.179 4.103-.082 5.76.422 6.825.642 1.349 2.088 1.3 3.559-.122.74-.723 1.316-1.552 2.82-4.062.771-1.284 1.413-2.348 1.421-2.365.057-.065.439.26 1.333 1.138 1.21 1.194 1.503 1.722 1.503 2.705 0 .553-.033.715-.203 1.016-.26.463-.642.69-1.138.683-.43-.009-.723-.139-1.438-.642-.731-.52-.902-.537-1.349-.122-.43.398-.723 1.024-.69 1.454.065.788 1.86 1.381 3.884 1.292 1.486-.065 2.47-.48 3.583-1.511.625-.577 1.462-1.755 1.893-2.69l.276-.609.057.325c.422 2.56 1.015 3.689 2.234 4.258.601.276 1.503.292 1.99.032.789-.414 1.577-1.349 2.13-2.502l.3-.634.138.414c.244.715.723 1.544 1.154 1.975 1.593 1.616 4.225 1.096 5.68-1.114l.34-.52.106.407c.163.625.382 1 .878 1.446 1.097 1.008 2.64.95 3.68-.138.212-.22.48-.585.594-.813l.21-.406.39.569c.61.894 1.415 1.405 2.365 1.503 1.243.13 2.722-.585 3.535-1.698l.219-.309.032.593c.017.325.017.626 0 .675-.016.04-.56.552-1.202 1.137-1.609 1.446-3.096 2.982-3.559 3.689-.552.82-.78 1.503-.78 2.34 0 .87.203 1.422.732 1.999 1.17 1.275 3.42 1.486 4.915.463 1.243-.853 1.86-1.99 2.25-4.144.155-.837.171-1.21.163-3.477l-.016-2.544.512-.625c1.674-2.064 3.307-4.9 4.16-7.215l.3-.82.74-.058a25.55 25.55 0 011.056-.049c.374 0 .374-.186.016 1.747-.186 1.032-.227 1.455-.235 2.763-.008 1.755.097 2.421.56 3.429.772 1.673 2.503 2.51 3.925 1.893.447-.195 1.162-.878 1.405-1.34.106-.204.212-.366.236-.366.024 0 .114.13.195.284.252.455.926 1.08 1.462 1.34 1.577.772 3.608.033 4.778-1.755l.333-.511.179.52c.3.893.804 1.47 1.641 1.852.553.252 1.544.244 2.04-.008.47-.252.91-.715 1.243-1.333l.276-.511.049.69c.065.845.097.926.43 1.089.813.382 2.243.382 2.527 0 .073-.098.122-.528.154-1.251.13-2.982.31-4.136.951-6.029.317-.95.95-2.259 1.089-2.259.146 0 .203.374.203 1.292 0 .43.057 1.422.122 2.202.374 4.428.755 5.281 2.348 5.281.544 0 .65-.024.813-.187.162-.17.186-.284.235-1.194.081-1.617.593-4.136 1.154-5.647.284-.78.707-1.771.788-1.869.032-.04.065.894.065 2.072 0 2.348.09 3.64.325 4.737.309 1.406.95 2.356 1.934 2.836.463.227.625.268 1.154.268.52 0 .666-.033 1.048-.244.487-.268.861-.69 1.17-1.308.455-.894.747-2.624.528-3.039-.138-.252-.471-.309-.65-.105-.073.08-.228.511-.341.95-.39 1.479-.724 1.999-1.292 1.999-.26 0-.374-.049-.593-.284-.707-.748-.935-2.95-.772-7.289.105-2.535.089-2.632-.415-3.022-.374-.284-1.397-.699-1.86-.756-.618-.073-.919.122-1.252.821-.568 1.186-1.47 4.136-1.787 5.81-.065.381-.138.698-.154.714-.082.082-.293-3.16-.293-4.607 0-1.356-.073-1.649-.536-2.088-.39-.381-1.17-.674-1.78-.674-.73 0-1.031.504-2.039 3.453l-.674 1.95V9.896c-.009-2.852.073-2.657-1.252-2.933-.796-.162-.893-.17-1.096-.057-.22.13-.22.13-.269 1.26-.032.625-.056 2.461-.065 4.07-.008 2.885-.008 2.95-.21 3.64-.367 1.276-1.049 2.332-1.585 2.446-.293.065-.764-.13-.927-.382-.446-.69-.576-2.624-.454-6.93l.089-3.25-.244-.22c-.3-.268-.983-.48-1.625-.496-.626-.024-.82.139-.82.65v.366l-.472-.488a4.316 4.316 0 00-.959-.715c-.43-.21-.56-.235-1.25-.235-.675 0-.838.032-1.252.227-.65.301-1.113.691-1.552 1.317-.804 1.12-1.324 2.608-1.511 4.322-.106.95-.049 3.088.081 3.64.073.26.057.423-.081.829-.423 1.276-1.333 1.763-1.999 1.056-.634-.658-.796-1.381-.788-3.429.008-1.714 0-1.673.56-4.346.163-.764.212-1.187.171-1.398-.073-.414-.495-.837-.942-.959-.39-.105-.512-.097-2.527.277l-1.024.186.008-.674c.008-.56-.016-.707-.162-.902-.528-.723-1.78-.666-2.47.114-.748.853-.748 2.17.008 2.876l.252.236-.22.747c-.447 1.577-1.38 3.583-2.356 5.062l-.536.813.016-4.428c.008-2.438.008-4.477 0-4.526-.016-.195-.804-.496-1.65-.634-.357-.057-.828.114-.95.35-.049.097-.09.268-.09.39 0 .219-.007.219-.357-.155-.682-.707-1.397-1.032-2.291-1.032-1.852 0-3.388 1.739-4.063 4.607-.17.731-.21 1.146-.251 2.503-.025.893-.008 1.836.032 2.088.122.698-.195 1.592-.772 2.194-.48.503-1.023.495-1.43-.033-.536-.715-.674-2.389-.544-6.882l.097-3.299-.243-.219c-.301-.268-.983-.48-1.633-.496-.602-.016-.854.171-.854.667v.316l-.406-.422a3.963 3.963 0 00-.772-.634c-1.088-.625-2.502-.463-3.55.39-.382.309-1.057 1.21-1.365 1.82-.488.95-.797 2.373-.967 4.388-.098 1.145-.147 1.438-.366 1.99-.569 1.48-1.625 2.576-2.267 2.348-.268-.097-.552-.503-.707-1.04-.276-.934-.316-2.088-.21-5.923.056-2.023.13-3.892.153-4.16l.057-.487 3.567-.081.187-.269c.195-.3.317-.877.236-1.186-.033-.13-.122-.211-.268-.244-.228-.048-2.803-.21-3.389-.21h-.316L36.629.69l-.366-.18C35.873.326 34.63 0 34.289 0a.721.721 0 00-.382.146zm11.79 8.71c.413.212.763.707.974 1.373.146.431.187.813.211 1.967.082 2.673-.381 4.55-1.356 5.525-1.09 1.088-2.17.503-2.65-1.43-.276-1.122-.227-3.844.098-5.16.472-1.901 1.6-2.844 2.722-2.275zm12.365-.049c.399.163.764.634.96 1.244.145.455.178.812.21 2.023.057 2.096-.154 3.461-.739 4.712-.333.699-.674 1.105-1.138 1.325-.593.292-1.015.195-1.486-.35-.943-1.064-1.13-4.688-.366-6.995.512-1.552 1.576-2.373 2.56-1.959zm21.816.187c.162.13.398.44.512.667.365.723.439 1.267.439 3.177-.008 1.519-.033 1.836-.187 2.461-.285 1.146-.626 1.877-1.105 2.365-1.43 1.47-2.698.178-2.86-2.909-.122-2.356.325-4.55 1.113-5.444.585-.666 1.479-.804 2.088-.317zm-20.32 13.894c-.106 3.746-.716 5.265-2.162 5.37-.593.041-1-.13-1.267-.544-.561-.86-.171-2.283 1.064-3.932.48-.642 2.259-2.576 2.373-2.576.024 0 .016.756-.009 1.682z"/>
+                            </g>
+                        </svg>                          
+                    </a>
+                </div>
+                <div class="searchbox">
+                    <form>
+                        <span class="fa fa-search"></span>
+                        <input type="text" placeholder="Buscar">
+                    </form>
+                </div>
+                <nav class="navigation">
+
+                    <div class="main_navigation mobile">
+                        <a href="#" class="search_mobile">
+                            <span class="fa fa-search"></span>
+                        </a>
+                        <li>
+                            <a href="#" class="home_mobile">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 23">
+                                        <path d="M20.762 22.5H13.75a.705.705 0 01-.688-.688v-5.637a2.074 2.074 0 00-2.108-2.108 2.074 2.074 0 00-2.108 2.108v5.637c0 .367-.321.688-.688.688H1.146a.705.705 0 01-.688-.688v-10.77c0-.184.092-.367.184-.505L10.496.684a.665.665 0 01.962 0l9.854 9.854c.184.184.275.505.138.734 0 .046-.046.046-.046.091v10.45c.046.367-.275.688-.642.688zm-6.325-1.375h5.638v-9.9L11 2.15l-9.167 9.167v9.808h5.638v-4.95c0-1.97 1.512-3.483 3.483-3.483s3.483 1.512 3.483 3.483v4.95z" class="icon"/>
+                                    </svg>                                      
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+                    </div>
+
+                    <ul class="main_navigation desktop">
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 23">
+                                        <path d="M20.762 22.5H13.75a.705.705 0 01-.688-.688v-5.637a2.074 2.074 0 00-2.108-2.108 2.074 2.074 0 00-2.108 2.108v5.637c0 .367-.321.688-.688.688H1.146a.705.705 0 01-.688-.688v-10.77c0-.184.092-.367.184-.505L10.496.684a.665.665 0 01.962 0l9.854 9.854c.184.184.275.505.138.734 0 .046-.046.046-.046.091v10.45c.046.367-.275.688-.642.688zm-6.325-1.375h5.638v-9.9L11 2.15l-9.167 9.167v9.808h5.638v-4.95c0-1.97 1.512-3.483 3.483-3.483s3.483 1.512 3.483 3.483v4.95z" class="icon"/>
+                                    </svg>                                      
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 21">
+                                        <path d="M21.908 1.242c-.137-.23-.366-.367-.596-.367H.688c-.275.046-.55.23-.641.458-.092.23-.046.55.137.78l7.288 7.15L9.99 19.62c.046.275.276.458.55.504h.092c.23 0 .459-.137.596-.32L21.863 1.928c.183-.183.183-.458.045-.687zM2.383 2.296h16.271L8.25 8.07 2.383 2.296zm8.571 15.4L8.937 9.262l10.496-5.82-8.479 14.254z" class="icon"/>
+                                    </svg>                                      
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 23">
+                                        <path d="M20.167 20.62c-1.192 1.147-2.567 1.88-5.592 1.88h-7.15c-3.025 0-4.4-.733-5.546-1.833C.733 19.475 0 18.1 0 15.075v-7.15c0-3.025.733-4.4 1.833-5.546C3.025 1.233 4.4.5 7.425.5h7.15c3.025 0 4.4.733 5.546 1.833C21.267 3.525 22 4.9 22 7.925v7.15c0 3.025-.733 4.4-1.833 5.546zM7.425 1.876c-2.842 0-3.85.733-4.63 1.467-.687.733-1.42 1.741-1.42 4.583v7.15c0 2.842.733 3.85 1.467 4.63.733.733 1.741 1.42 4.583 1.42h7.15c2.842 0 3.85-.733 4.63-1.467.733-.733 1.42-1.741 1.42-4.583v-7.15c0-2.842-.733-3.85-1.467-4.63-.733-.687-1.741-1.42-4.583-1.42h-7.15zm9.212 10.313h-4.95v4.95c0 .366-.32.687-.687.687a.705.705 0 01-.688-.688v-4.95h-4.95a.705.705 0 01-.687-.687c0-.367.32-.688.688-.688h4.95v-4.95c0-.366.32-.687.687-.687.367 0 .688.32.688.688v4.95h4.95c.366 0 .687.32.687.687 0 .367-.32.688-.688.688z" class="icon"/>
+                                    </svg>
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 23">
+                                        <path d="M11 .5C4.95.5 0 5.45 0 11.5s4.95 11 11 11 11-4.95 11-11-4.95-11-11-11zm0 20.625A9.624 9.624 0 011.375 11.5 9.624 9.624 0 0111 1.875a9.624 9.624 0 019.625 9.625A9.624 9.624 0 0111 21.125zm4.675-15.217L8.892 9.117a.554.554 0 00-.321.32l-3.208 6.784c-.138.275-.092.596.137.779.138.137.32.183.504.183.092 0 .184 0 .275-.046l6.784-3.208a.554.554 0 00.32-.32l3.209-6.784c.137-.275.091-.596-.138-.78-.183-.228-.504-.274-.779-.137zm-3.392 6.875l-2.52-2.52 4.812-2.292-2.292 4.812z" class="icon"/>
+                                    </svg>                                      
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <div class="icon">
+                                    <svg viewBox="0 0 22 21">
+                                        <path d="M15.858 2.296c2.613 0 4.767 2.383 4.767 5.27 0 3.117-2.704 5.042-5.27 7.334-2.568 2.292-3.897 3.53-4.355 3.804-.504-.32-2.154-1.833-4.354-3.804-2.613-2.292-5.271-4.217-5.271-7.333 0-2.888 2.154-5.271 4.767-5.271 1.925 0 2.979.916 3.712 1.97.871 1.192 1.009 1.788 1.146 1.788s.275-.596 1.146-1.787c.733-1.055 1.787-1.971 3.712-1.971zm0-1.375c-2.062 0-3.62.825-4.858 2.566C9.762 1.792 8.204.967 6.142.967 2.75.92 0 3.9 0 7.567c0 3.345 2.475 5.5 4.858 7.562.275.23.596.504.871.78l1.054.916c2.017 1.787 3.025 2.704 3.484 2.98.229.137.504.228.733.228.275 0 .504-.091.733-.229.459-.275 1.284-1.008 3.575-3.117l.917-.825c.32-.275.596-.55.917-.779C19.57 13.067 22 10.958 22 7.567 22 3.9 19.25.92 15.858.92z" class="icon"/>
+                                    </svg>
+                                </div>
+                                <div class="bubble_notification">
+                                    <span class="fa fa-circle"></span>
+                                </div>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="user open_nav">
+                        <a href="#">
+                            <img src="assets/img/User.jpg" alt="">
+                        </a>
+                    </div>
+                </nav>
+            </div>
+        </header><!-- /header -->
+
+        <!-- user section -->
+        <section class="user">
+            <div class="user_holder">
+                <div class="user_picture">
+                    <a class="user_active_story" href="#">
+                        <img src="assets/img/User.jpg" alt="user_pic" class="user_day_story">
+                        <svg viewBox="0 0 168 168" class="charging_story">
+                            <circle cx="84" cy="84" r="82.5" class="user_pic_status"/>
+                            <defs>
+                            <linearGradient id="paint0_linear_2_47" x1="143.36" x2="16.8" y1="21.84" y2="134.96" class="linear_gradient" gradientUnits="userSpaceOnUse">
+                                <stop offset=".042" class="stop_01"/>
+                                <stop offset="1" class="stop_02"/>
+                            </linearGradient>
+                            </defs>
+                        </svg>                      
+                    </a> 
+                </div>
+                <div class="user_info">
+                    <div class="user_info_heading">
+                        <div class="user_name">
+                            <h2 class="user_name">msstefanil</h2>
+                        </div>
+                        <div class="user_options">
+                            <button class="btn-follow">Seguir</button>
+                            <button class="btn-arrow">
+                                <span class="fa fa-angle-down"></span>
+                            </button>
+                            <div class="more_options">
+                                <span class="fa fa-ellipsis-h"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="user_info_data">
+                        <li class="publications">
+                            <p class="number">234</p>
+                            <p class="data">publicaciones</p>
+                        </li>
+                        <li class="followers">
+                            <p class="number">323</p>
+                            <p class="data">seguidores</p>
+                        </li>
+                        <li class="following">
+                            <p class="number">442</p>
+                            <p class="data">siguiendo</p>
+                        </li>
+                    </ul>
+                    <div class="user_info_bio">
+                        <h1 class="your_name">Silvia Stefani</h1>
+                        <p class="your_bio">Sed nibh ac posuere nibh. Lacinia tellus commodo nisl sed. O aliquet aliquet volutpat dignissim diam, gravida. Eget blandit arcu massa ullamcorper.
+                            <a class="hashtag" href="#">#Developer</a>
+                            <a class="hashtag" href="#">#Design</a>
+                        </p>
+                        <p class="your_site">
+                            <a href="#">https://youtube.com/fake-url</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section><!-- /user section -->
+
+        <!-- stories -->
+        <section class="stories">
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_01.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">TFE</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_02.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Mallorca</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_03.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">&#127867</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_04.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Editorial</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_05.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Bologna</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_06.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">ABABO</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_07.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Tipografía</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_08.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Diseño Web</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_09.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Madrid</p>
+                </div>
+            </div>
+            <div class="story">
+                <div class="story_img">
+                    <a class="to_stories" href="#">
+                        <img src="assets/img/Story_Pic_10.jpeg" alt="Story_Pic">
+                        <svg viewBox="0 0 88 87" class="charging_highlights">
+                            <circle cx="43.786" cy="43.5" r="43" class="stroke_visited"/>
+                        </svg>
+                    </a>
+                </div>
+                <div class="story_title">
+                    <p class="story">Animación</p>
+                </div>
+            </div>
+        </section><!-- /stories -->
+
+        <!-- posts -->
+        <main class="posts">
+            <div class="posts_header">
+                <a class="post_header_item active" href="#">
+                    <div class="post_header_item_icon">
+                        <svg viewBox="0 0 12 12">
+                            <path d="M11.25.375H.75C.55.375.375.55.375.75v10.5c0 .2.175.375.375.375h10.5c.2 0 .375-.175.375-.375V.75c0-.2-.175-.375-.375-.375zm-10.125.75h2.75v2.75h-2.75v-2.75zm0 3.5h2.75v2.75h-2.75v-2.75zm2.75 6.25h-2.75v-2.75h2.75v2.75zm3.5 0h-2.75v-2.75h2.75v2.75zm0-3.5h-2.75v-2.75h2.75v2.75zm0-3.5h-2.75v-2.75h2.75v2.75zm3.5 7h-2.75v-2.75h2.75v2.75zm0-3.5h-2.75v-2.75h2.75v2.75zm0-3.5h-2.75v-2.75h2.75v2.75z" class="icon" clip-rule="evenodd"/>
+                        </svg>
+                    </div>
+                    <div class="post_header_item_title">
+                        <p class="post_title_desktop">Publicaciones</p>
+                        <p class="post_title_mobile">Posts</p>
+                    </div>
+
+                </a>
+                <a class="post_header_item" href="#">
+                    <div class="post_header_item_icon">
+                        <svg viewBox="0 0 12 12">
+                            <path d="M7.875 7.05l-2.8-1.625a.34.34 0 00-.375 0c-.125.05-.2.175-.2.325V9a.39.39 0 00.375.375c.075 0 .125-.025.2-.05l2.8-1.625a.364.364 0 00.175-.325.427.427 0 00-.175-.325zm3.1-6.05C10.35.4 9.6 0 7.925 0H4.05C2.4 0 1.65.4 1 1.025.4 1.65 0 2.4 0 4.05v3.875c0 1.65.4 2.425 1.025 3.05.625.6 1.375 1 3.05 1H7.95c1.65 0 2.425-.4 3.05-1.025.6-.625 1-1.375 1-3.05V4.05c0-1.65-.4-2.4-1.025-3.05zM7.95.75c1.575 0 2.1.4 2.5.8.3.3.575.675.725 1.45H8.85L7.575.75h.375zm-3.9 0h2.625L7.95 3h-3L3.675.75h.375zm-2.5.8c.275-.275.625-.55 1.325-.7L4.1 3H.825c.15-.775.425-1.15.725-1.45zm9.7 6.4c0 1.575-.4 2.1-.8 2.5-.4.4-.95.8-2.5.8h-3.9c-1.575 0-2.1-.4-2.5-.8-.4-.4-.8-.95-.8-2.5v-4.2h10.5v4.2z" class="icon"/>
+                        </svg>
+                    </div>
+                    <div class="post_header_item_title">
+                        <p class="post_title_desktop">IGTV</p>
+                        <p class="post_title_mobile">IGTV</p>
+                    </div>
+                </a>
+                <a class="post_header_item" href="#">
+                    <div class="post_header_item_icon">
+                        <svg viewBox="0 0 11 12">
+                            <path d="M5.455 3.767c.534 0 1.019.233 1.37.61.35.377.566.899.566 1.474s-.217 1.096-.567 1.474c-.35.377-.835.61-1.369.61a1.865 1.865 0 01-1.37-.61A2.161 2.161 0 013.52 5.85c0-.575.217-1.097.567-1.474s.835-.61 1.369-.61zM1.021 1.405h3.175L5.444 0l1.293 1.405h3.151c.562 0 1.021.496 1.021 1.1V10.9c0 .605-.46 1.099-1.02 1.099H1.02C.46 12.001 0 11.507 0 10.902V2.504C0 1.9.46 1.405 1.02 1.405zm3.176.658H1.022a.395.395 0 00-.29.13.457.457 0 00-.12.311v8.397c0 .121.046.232.12.312.075.08.177.13.29.13h1.27a3.527 3.527 0 01.915-2.069 3.06 3.06 0 012.248-1.002 3.06 3.06 0 012.248 1.002c.503.541.839 1.264.915 2.069h1.271c.113 0 .215-.05.29-.13a.458.458 0 00.121-.312V2.504a.454.454 0 00-.121-.311.395.395 0 00-.29-.13H6.737V2.06a.586.586 0 01-.432-.194L5.451.941l-.784.883a.593.593 0 01-.47.239zm-1.277 9.28H7.99a2.828 2.828 0 00-.728-1.593 2.46 2.46 0 00-1.807-.806 2.46 2.46 0 00-1.808.806c-.39.42-.655.975-.728 1.594zm3.527-6.56a1.35 1.35 0 00-.992-.442 1.35 1.35 0 00-.992.443c-.254.273-.41.65-.41 1.067 0 .417.156.794.41 1.068.254.273.605.442.992.442s.738-.169.992-.442c.254-.274.41-.65.41-1.068 0-.417-.156-.795-.41-1.067z" class="icon"/>
+                        </svg>                          
+                    </div>
+                    <div class="post_header_item_title">
+                        <p class="post_title_desktop">Etiquetadas</p>
+                        <p class="post_title_mobile">Tag</p>
+                    </div>
+                </a>
+            </div> 
+            <div class="posts_items">
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_01.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                        <svg viewBox="0 0 16 18">
+                            <path d="M2.6 17.438a2.26 2.26 0 01-1.087-.3C.838 16.724.425 16.05.425 15.224V2.737c0-.787.413-1.5 1.088-1.912.712-.412 1.537-.412 2.212 0l11.287 6.6c.563.338.863.9.863 1.538 0 .637-.338 1.2-.863 1.537L3.725 17.137c-.337.188-.75.3-1.125.3z" class="icon_post"/>
+                        </svg>                                                     
+                    </div>
+                </div>
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_02.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                        <svg viewBox="0 0 18 19">
+                            <path d="M9.787 1l2.588 4.32H7.35L5.1 1.038c.261-.034.524-.046.788-.038h3.9zm-6.075.263L5.888 5.32H.15A4.909 4.909 0 011.538 2.5a4.5 4.5 0 012.175-1.237zM11.288 1h.6c2.25 0 3.488.45 4.575 1.541A4.691 4.691 0 0117.85 5.32h-3.975L11.287 1zm.638 10.898l-4.2-2.442A.645.645 0 006.75 10v4.905a.671.671 0 00.938.6l.037-.038 4.2-2.44a.638.638 0 00.037-1.092l-.037-.037zM0 6.625h18v6.289c0 2.25-.45 3.495-1.538 4.582-1.05 1.017-2.25 1.5-4.387 1.5h-6c-2.25 0-3.488-.45-4.575-1.541C.488 16.405 0 15.205 0 13.06V6.625z" class="icon_post"/>
+                        </svg>                       
+                    </div>
+                </div>
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_03.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                    </div>
+                </div>
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_04.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                    </div>
+                </div>
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_05.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                        <svg viewBox="0 0 18 19">
+                            <path d="M9.787 1l2.588 4.32H7.35L5.1 1.038c.261-.034.524-.046.788-.038h3.9zm-6.075.263L5.888 5.32H.15A4.909 4.909 0 011.538 2.5a4.5 4.5 0 012.175-1.237zM11.288 1h.6c2.25 0 3.488.45 4.575 1.541A4.691 4.691 0 0117.85 5.32h-3.975L11.287 1zm.638 10.898l-4.2-2.442A.645.645 0 006.75 10v4.905a.671.671 0 00.938.6l.037-.038 4.2-2.44a.638.638 0 00.037-1.092l-.037-.037zM0 6.625h18v6.289c0 2.25-.45 3.495-1.538 4.582-1.05 1.017-2.25 1.5-4.387 1.5h-6c-2.25 0-3.488-.45-4.575-1.541C.488 16.405 0 15.205 0 13.06V6.625z" class="icon_post"/>
+                        </svg>   
+                    </div>
+                </div>
+                <div class="post">
+                    <a class="post_image" href="#">
+                        <img src="assets/img/Post_06.jpg" alt="Post_Image">
+                    </a>
+                    <div class="icons">
+                    </div>
+                </div>
+            </div>
+        </main><!-- /posts -->
+
+<!-- HIDDEN HTML -->
+        <!-- modal window menu -->
+        <div class="modal_window_menu">
+            <div class="modal_holder">
+                <ul class="modal_holder_items">
+                    <li class="modal_holder_item">
+                        <a href="#" class="modal_holder_link">
+                            <p class="modal_holder_title danger">Bloquear a este usuario</p>
+                        </a>
+                    </li>
+                    <li class="modal_holder_item">
+                        <a href="#" class="modal_holder_link">
+                            <p class="modal_holder_title danger">Restringir</p>
+                        </a>
+                    </li>
+                    <li class="modal_holder_item">
+                        <a href="#" class="modal_holder_link">
+                            <p class="modal_holder_title danger">Reportar usuario</p>
+                        </a>
+                    </li>
+                    <li class="modal_holder_item close_cancel">
+                        <a href="#" class="modal_holder_link">
+                            <p class="modal_holder_title">Cancelar</p>
+                        </a>
+                    </li>
+                </ul>
+                <a href="#" class="close_button">
+                    <span class="fa fa-close"></span>
+                </a>
+            </div>
+        </div><!-- /modal window menu -->
+        
+        <!-- nav mobile -->
+        <div class="nav_mobile">
+            <div class="header_mobile">
+                <div class="settings">
+                    <span class="fa fa-cog"></span>
+                </div>
+                <a href="#" class="close_nav">
+                    <span class="fa fa-times"></span>
+                </a>
+            </div>
+            <div class="user_info">
+                <div class="user_name">
+                    <h1 class="your_name">Silvia Stefani</h1>
+                    <h2 class="user_name">@msstefanil</h2>
+                </div>
+                <div class="user_pic">
+                    <img src="assets/img/User.jpg" alt="User_Picture">
+                    <svg viewBox="0 0 168 168">
+                        <circle cx="84" cy="84" r="82.5" class="user_pic_status"/>
+                        <defs>
+                        <linearGradient id="paint0_linear_2_47" x1="143.36" x2="16.8" y1="21.84" y2="134.96" class="linear_gradient" gradientUnits="userSpaceOnUse">
+                            <stop offset=".042" stop-color="#C72E8F"/>
+                            <stop offset="1" stop-color="#F99F4F"/>
+                        </linearGradient>
+                        </defs>
+                    </svg>
+                </div>
+            </div>
+
+            <ul class="user_section">
+                <li class="section_user section_drop drop_direct">
+                    <a href="#" class="section_box">
+                        <div class="section_header">
+                            <div class="icon_section_header">
+                                <svg viewBox="0 0 23 20">
+                                    <path d="M21.908.367C21.771.137 21.542 0 21.312 0H.688C.412.046.137.23.046.458c-.092.23-.046.55.137.78l7.288 7.15 2.52 10.358c.046.275.276.458.55.504h.092c.23 0 .459-.137.596-.32L21.863 1.053c.183-.183.183-.458.045-.687zM2.383 1.42h16.271L8.25 7.196 2.383 1.42zm8.571 15.4L8.937 8.387l10.496-5.82-8.479 14.254z" class="icon"/>
+                                </svg>
+                            </div>
+                            <div class="title_section_header">
+                                <h3>Mensajes Directos</h3>
+                            </div>
+                        </div>
+                        <div class="section_expand expand_direct">
+                            <svg viewBox="0 0 13 13">
+                                <path d="M6.556 12.493V6.728m0 0V.758m0 5.97H12m-5.444 0H1.11" class="expand_icon"/>
+                            </svg>                          
+                        </div>
+                    </a>
+                    <div class="content_user content_direct">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_01.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>PAPERELLE</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_02.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>@thesinsofsarabeans</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_03.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>@sophism</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_04.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>@silwwia</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_05.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>Máster MDI</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_06.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>ABABO</h3>
+                                </div>
+                            </a href="#">
+                            <a href="#" class="conversation">
+                                <div class="user_pic">
+                                <img src="assets/img/user_07.png" alt="user_pic">
+                                </div>
+                                <div class="user_name">
+                                <h3>@lacuchu</h3>
+                                </div>
+                            </a href="#">
+                    </div>
+                </li>
+
+                <li class="section_user section_drop drop_likes">
+                    <a href="#" class="section_box">
+                        <div class="section_header">
+                            <div class="icon_section_header">
+                                <svg viewBox="0 0 22 20">
+                                    <path d="M15.858 1.625c2.613 0 4.767 2.383 4.767 5.27 0 3.117-2.704 5.043-5.27 7.334-2.568 2.292-3.897 3.53-4.355 3.804-.504-.32-2.154-1.833-4.354-3.804-2.613-2.291-5.271-4.216-5.271-7.333 0-2.888 2.154-5.271 4.767-5.271 1.925 0 2.979.917 3.712 1.97.871 1.192 1.009 1.788 1.146 1.788s.275-.596 1.146-1.787c.733-1.054 1.787-1.971 3.712-1.971zm0-1.375c-2.062 0-3.62.825-4.858 2.567C9.762 1.12 8.204.296 6.142.296 2.75.25 0 3.229 0 6.896c0 3.346 2.475 5.5 4.858 7.562.275.23.596.505.871.78l1.054.916c2.017 1.788 3.025 2.704 3.484 2.98.229.137.504.229.733.229.275 0 .504-.092.733-.23.459-.275 1.284-1.008 3.575-3.116l.917-.825c.32-.275.596-.55.917-.78C19.57 12.396 22 10.287 22 6.896 22 3.229 19.25.25 15.858.25z" class="icon"/>
+                                </svg>                              
+                            </div>
+                            <div class="title_section_header">
+                                <h3>Me Gusta</h3>
+                            </div>
+                        </div>
+                        <div class="section_expand expand_likes">
+                            <svg viewBox="0 0 13 13">
+                                <path class="expand_icon"/>
+                            </svg>                          
+                        </div>
+                    </a>
+                    <div class="content_user content_likes">
+                        <div class="likes_box">
+                            <div class="user_pic">
+                                <img src="assets/img/user_02.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@thesinsofsarabeans</a>
+                                    has liked your post.
+                                    <p class="notification_time">3h</p>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="likes_box">
+                            <div class="user_pic">
+                                <img src="assets/img/user_01.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@leireemaza</a>
+                                    tagged you in a post.
+                                    <p class="notification_time">5h</p>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="likes_box ">
+                            <div class="user_pic">
+                                <img src="assets/img/user_03.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@sophism</a>
+                                    ,
+                                    <a href="#" class="user_link">@silwwia</a>
+                                    and 2 others liked your post.
+                                    <p class="notification_time">6h</p>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="likes_box">
+                            <div class="user_pic">
+                                <img src="assets/img/user_06.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@ababo</a>
+                                    , 
+                                    <a href="#" class="user_link">@roberto_dano</a>
+                                    , 
+                                    <a href="#" class="user_link">@sara.rombaldoni</a>
+                                    and 6 others liked your post.
+                                    <p class="notification_time">6h</p>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="likes_box">
+                            <div class="user_pic">
+                                <img src="assets/img/user_08.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@esdmadrid</a>
+                                    started following you.
+                                    <p class="notification_time">6h</p>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="likes_box">
+                            <div class="user_pic">
+                                <img src="assets/img/user_05.png" alt="user_pic">
+                            </div>
+                            <div class="interaction_info">
+                                <h3>
+                                    <a href="#" class="user_link">@silwwia</a>
+                                    started following you.
+                                    <p class="notification_time">6h</p>
+                                </h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="section_user add_post">
+                    <a href="#" class="section_box">
+                        <div class="section_header">
+                            <div class="icon_section_header">
+                                <svg viewBox="0 0 22 23">
+                                    <g class="icon_union">
+                                    <path d="M16.637 12.05h-4.95V17c0 .367-.32.688-.687.688a.705.705 0 01-.688-.688v-4.95h-4.95a.705.705 0 01-.687-.688c0-.366.32-.687.688-.687h4.95v-4.95c0-.367.32-.687.687-.687.367 0 .688.32.688.687v4.95h4.95c.366 0 .687.32.687.688 0 .366-.32.687-.688.687z"/>
+                                    <path d="M20.167 20.483c-1.192 1.146-2.567 1.88-5.592 1.88h-7.15c-3.025 0-4.4-.734-5.546-1.834C.733 19.337 0 17.962 0 14.938v-7.15c0-3.026.733-4.4 1.833-5.546C3.025 1.096 4.4.362 7.425.362h7.15c3.025 0 4.4.734 5.546 1.834C21.267 3.387 22 4.762 22 7.787v7.15c0 3.025-.733 4.4-1.833 5.546zM7.425 1.737c-2.842 0-3.85.734-4.63 1.467-.687.733-1.42 1.742-1.42 4.583v7.15c0 2.842.733 3.85 1.467 4.63.733.733 1.741 1.42 4.583 1.42h7.15c2.842 0 3.85-.733 4.63-1.466.733-.733 1.42-1.742 1.42-4.584v-7.15c0-2.841-.733-3.85-1.467-4.629-.733-.687-1.741-1.42-4.583-1.42h-7.15z" clip-rule="evenodd"/>
+                                    </g>
+                                </svg>                              
+                            </div>
+                            <div class="title_section_header">
+                                <h3>Añadir Publicación</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="section_user explore">
+                    <a href="#" class="section_box">
+                        <div class="section_header">
+                            <div class="icon_section_header">
+                                <svg viewBox="0 0 22 23">
+                                    <path d="M11 .362c-6.05 0-11 4.95-11 11s4.95 11 11 11 11-4.95 11-11-4.95-11-11-11zm0 20.626a9.624 9.624 0 01-9.625-9.625A9.624 9.624 0 0111 1.737a9.624 9.624 0 019.625 9.626A9.624 9.624 0 0111 20.988zM15.675 5.77L8.892 8.979a.554.554 0 00-.321.321l-3.208 6.783c-.138.275-.092.596.137.78.138.137.32.183.504.183.092 0 .184 0 .275-.046l6.784-3.208a.554.554 0 00.32-.321l3.209-6.784c.137-.275.091-.595-.138-.779-.183-.229-.504-.275-.779-.137zm-3.392 6.875l-2.52-2.521 4.812-2.292-2.292 4.813z" class="icon" clip-rule="evenodd"/>
+                                </svg>
+                            </div>
+                            <div class="title_section_header">
+                                <h3>Explorar</h3>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div><!-- /nav mobile -->
+
+
+    </div>
+    <script src="./app/main.js"></script>
+</body>
+
+</html>

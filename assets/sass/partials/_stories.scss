@@ -1,0 +1,88 @@
+section.stories {
+    width: 75%;
+    max-width: 1080px;
+    margin: $base * 2 auto;
+    padding: $base 0;
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+
+    @media screen and (max-width:750px) {
+        width: 100%;
+        margin: 0 auto $base * 2 auto;
+    }
+
+    .story {
+        margin: 0 $base * 3;
+        flex-shrink: 0;
+
+        @media screen and (max-width:750px) {
+            margin: 0 $base * 2.5;
+        }
+
+        .story_img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #fafafa;
+            margin-bottom: $base * 2;
+
+            a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+
+                padding: .15rem;
+
+                img {
+                    display: flex;
+                    width: 5.5rem;
+                    height: 5.5rem;
+                    object-fit: cover;
+                    
+                    border-radius: 50%;
+                }
+
+                svg.charging_highlights {
+                    position: absolute;
+                    width: 6.25rem;
+
+                    .stroke_visited {
+                        stroke: #ccc;
+                        stroke-width: .1rem;
+                        stroke-linecap: round;
+                        fill: none;
+
+                        transform-origin: 50% 50%;
+
+                        stroke-dasharray: 0px;
+                        stroke-dashoffset: 0px;
+                    }
+
+
+                    &.active {
+                        .stroke_visited {
+                            stroke-dasharray: 270px;
+                            transform: rotate(270deg);
+
+                            transition: stroke-dasharray transform;
+                            transition-duration: 1s, 1s;
+                            transition-timing-function: ease, ease;
+                        }
+                    }
+                }
+            }
+        }
+        .story_title {
+            display: flex;
+            justify-content: center;
+            
+            p.story {
+                text-align: center;
+            }
+        }
+    }
+}
